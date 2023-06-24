@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Password Generator | Free</title>
+
+    <link rel="shortcut icon" href="/assets/421648-5381de7e.png" type="image/x-icon">
+    
+  <script type="module" crossorigin src="/assets/index-f792b1b6.js"></script>
+  <link rel="stylesheet" href="/assets/index-32301519.css">
+</head>
+
+<body class="bg-gradient-to-b from-orange-500 to-yellow-300 text-white">
+    <div id="wrapper" class="flex items-center justify-center h-[100vh] font-sans">
+        <div class="container lg:w-[25vw] w-[85%] mx-auto text-center flex flex-col gap-10 pt-6">
+            <h1 class="font-extrabold lg:text-2xl text-xl text-[#6B2737]">Password Generator</h1>
+            <div class="display-container flex items-center justify-evenly">
+                <input readonly="readonly" placeholder="Password"
+                    class="display rounded-lg px-5 py-3 text-[#3943B7] bg-[#F8F4A6] font-bold lg:text-2xl text-xl"
+                    data-passworddisplay>
+                <button data-copy onclick="copyContent()">
+                    <span></span>
+                    <img src="/assets/copy-88fb2557.svg" alt="copy"  class="" width="25rem" height="25rem">
+                </button>
+            </div>
+            <div class="input-container flex flex-col gap-2 font-semibold text-xl">
+                <div class="length-container flex justify-evenly items-center gap-4">
+                    <p>Password Length</p>
+                    <p data-lengthnumber>0</p>
+                </div>
+                <input type="range" min="1" max="20" class="slider self-center w-44 accent-red-500" step="1"
+                    data-lengthslider>
+                <div class="flex flex-col gap-4 mt-5">
+                    <div>
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Includes Uppercase letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase">Includes Lowercase letters</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Includes Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Includes Symbols</label>
+                    </div>
+                </div>
+                <button
+                    class="generateButton pt-4 bg-gradient-to-r from-[#1488CC] to-[#2B32B2] px-3 py-5 lg:w-w-[150px] w-[75%] rounded-2xl m-auto mt-5">Generate
+                    Password</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
